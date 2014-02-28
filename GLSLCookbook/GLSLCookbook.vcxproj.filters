@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="着色器">
+      <UniqueIdentifier>{b4f860cb-90c5-4e15-93b9-695826f07617}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBasic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneUniform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GLSLProgram.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VBOTorus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneDiffuse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneADS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTwoSides.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VBOTeapot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VBOMesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMultiLight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneDirectional.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenePerFragment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneHalfwayVector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSpotlight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneCartoon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneFog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTexture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VBOCube.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneAlphaMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TGAIO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneNormal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneCubeMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VBOPlane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBasic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneUniform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSLProgram.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VBOTorus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DEFINES.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDiffuse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneADS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTwoSides.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VBOTeapot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TeapotData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VBOMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMultiLight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDirectional.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenePerFragment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneHalfwayVector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSpotlight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneCartoon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneFog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTexture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VBOCube.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneAlphaMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TGAIO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneNormal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneCubeMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VBOPlane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basicuniform.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="basicuniform.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="shader\basic.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="shader\basic.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="diffuse.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="diffuse.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="ads.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="ads.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="twosides.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="twosides.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="discard.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="discard.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="multilight.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="multilight.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="directional.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="directional.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="perfragment.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="perfragment.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="halfwayvector.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="halfwayvector.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="spotlight.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="spotlight.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="cartoonshade.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="cartoonshade.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="fog.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="fog.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="texture.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="texture.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="alphamap.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="alphamap.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="normalmap.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="normalmap.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="cubemap.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="cubemap.frag">
+      <Filter>着色器</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GLSLCookbook.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

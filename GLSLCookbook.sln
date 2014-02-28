@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLSLCookbook", "GLSLCookbook\GLSLCookbook.vcxproj", "{C3383BED-7E34-4858-B0E4-59A31E9BAEEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3383BED-7E34-4858-B0E4-59A31E9BAEEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C3383BED-7E34-4858-B0E4-59A31E9BAEEE}.Debug|Win32.Build.0 = Debug|Win32
+		{C3383BED-7E34-4858-B0E4-59A31E9BAEEE}.Release|Win32.ActiveCfg = Release|Win32
+		{C3383BED-7E34-4858-B0E4-59A31E9BAEEE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

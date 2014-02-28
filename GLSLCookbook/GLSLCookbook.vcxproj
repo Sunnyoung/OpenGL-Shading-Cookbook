@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C3383BED-7E34-4858-B0E4-59A31E9BAEEE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GLSLCookbook</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Drawable.cpp" />
+    <ClCompile Include="GLSLProgram.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneAlphaMap.cpp" />
+    <ClCompile Include="SceneBasic.cpp" />
+    <ClCompile Include="SceneCartoon.cpp" />
+    <ClCompile Include="SceneCubeMap.cpp" />
+    <ClCompile Include="SceneDiffuse.cpp" />
+    <ClCompile Include="SceneADS.cpp" />
+    <ClCompile Include="SceneDirectional.cpp" />
+    <ClCompile Include="SceneFog.cpp" />
+    <ClCompile Include="SceneHalfwayVector.cpp" />
+    <ClCompile Include="SceneMultiLight.cpp" />
+    <ClCompile Include="SceneNormal.cpp" />
+    <ClCompile Include="ScenePerFragment.cpp" />
+    <ClCompile Include="SceneSpotlight.cpp" />
+    <ClCompile Include="SceneTexture.cpp" />
+    <ClCompile Include="SceneTwoSides.cpp" />
+    <ClCompile Include="SceneUniform.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TGAIO.cpp" />
+    <ClCompile Include="VBOCube.cpp" />
+    <ClCompile Include="VBOMesh.cpp" />
+    <ClCompile Include="VBOPlane.cpp" />
+    <ClCompile Include="VBOTeapot.cpp" />
+    <ClCompile Include="VBOTorus.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DEFINES.h" />
+    <ClInclude Include="Drawable.h" />
+    <ClInclude Include="GLSLProgram.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneAlphaMap.h" />
+    <ClInclude Include="SceneBasic.h" />
+    <ClInclude Include="SceneCartoon.h" />
+    <ClInclude Include="SceneCubeMap.h" />
+    <ClInclude Include="SceneDiffuse.h" />
+    <ClInclude Include="SceneADS.h" />
+    <ClInclude Include="SceneDirectional.h" />
+    <ClInclude Include="SceneFog.h" />
+    <ClInclude Include="SceneHalfwayVector.h" />
+    <ClInclude Include="SceneMultiLight.h" />
+    <ClInclude Include="SceneNormal.h" />
+    <ClInclude Include="ScenePerFragment.h" />
+    <ClInclude Include="SceneSpotlight.h" />
+    <ClInclude Include="SceneTexture.h" />
+    <ClInclude Include="SceneTwoSides.h" />
+    <ClInclude Include="SceneUniform.h" />
+    <ClInclude Include="SkyBox.h" />
+    <ClInclude Include="TeapotData.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TGAIO.h" />
+    <ClInclude Include="VBOCube.h" />
+    <ClInclude Include="VBOMesh.h" />
+    <ClInclude Include="VBOPlane.h" />
+    <ClInclude Include="VBOTeapot.h" />
+    <ClInclude Include="VBOTorus.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="alphamap.frag" />
+    <None Include="alphamap.vert" />
+    <None Include="basicuniform.frag" />
+    <None Include="basicuniform.vert" />
+    <None Include="cartoonshade.frag" />
+    <None Include="cartoonshade.vert" />
+    <None Include="cubemap.frag" />
+    <None Include="cubemap.vert" />
+    <None Include="diffuse.frag" />
+    <None Include="diffuse.vert" />
+    <None Include="ads.frag" />
+    <None Include="ads.vert" />
+    <None Include="directional.frag" />
+    <None Include="directional.vert" />
+    <None Include="discard.frag" />
+    <None Include="discard.vert" />
+    <None Include="fog.frag" />
+    <None Include="fog.vert" />
+    <None Include="halfwayvector.frag" />
+    <None Include="halfwayvector.vert" />
+    <None Include="multilight.frag" />
+    <None Include="multilight.vert" />
+    <None Include="normalmap.frag" />
+    <None Include="normalmap.vert" />
+    <None Include="perfragment.frag" />
+    <None Include="perfragment.vert" />
+    <None Include="shader\basic.frag" />
+    <None Include="shader\basic.vert" />
+    <None Include="spotlight.frag" />
+    <None Include="spotlight.vert" />
+    <None Include="texture.frag" />
+    <None Include="texture.vert" />
+    <None Include="twosides.frag" />
+    <None Include="twosides.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GLSLCookbook.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1 @@
+《OpenGL Shading Lanuage Cookbook》中的实例代码，通过面向对象的结构重写。
