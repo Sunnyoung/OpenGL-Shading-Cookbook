@@ -94,6 +94,9 @@
     <ClCompile Include="SceneMultiLight.cpp" />
     <ClCompile Include="SceneNormal.cpp" />
     <ClCompile Include="ScenePerFragment.cpp" />
+    <ClCompile Include="SceneProjectTexture.cpp" />
+    <ClCompile Include="SceneRefract.cpp" />
+    <ClCompile Include="SceneRenderToTex.cpp" />
     <ClCompile Include="SceneSpotlight.cpp" />
     <ClCompile Include="SceneTexture.cpp" />
     <ClCompile Include="SceneTwoSides.cpp" />
@@ -125,6 +128,9 @@
     <ClInclude Include="SceneMultiLight.h" />
     <ClInclude Include="SceneNormal.h" />
     <ClInclude Include="ScenePerFragment.h" />
+    <ClInclude Include="SceneProjectTexture.h" />
+    <ClInclude Include="SceneRefract.h" />
+    <ClInclude Include="SceneRenderToTex.h" />
     <ClInclude Include="SceneSpotlight.h" />
     <ClInclude Include="SceneTexture.h" />
     <ClInclude Include="SceneTwoSides.h" />
@@ -166,6 +172,12 @@
     <None Include="normalmap.vert" />
     <None Include="perfragment.frag" />
     <None Include="perfragment.vert" />
+    <None Include="projecttexture.frag" />
+    <None Include="projecttexture.vert" />
+    <None Include="refract.frag" />
+    <None Include="refract.vert" />
+    <None Include="rendertotex.frag" />
+    <None Include="rendertotex.vert" />
     <None Include="shader\basic.frag" />
     <None Include="shader\basic.vert" />
     <None Include="spotlight.frag" />

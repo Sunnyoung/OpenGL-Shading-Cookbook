@@ -15,10 +15,13 @@
 #include "SceneAlphaMap.h"
 #include "SceneNormal.h"
 #include "SceneCubeMap.h"
+#include "SceneRefract.h"
+#include "SceneProjectTexture.h"
+#include "SceneRenderToTex.h"
 #include <iostream>
 using namespace std;
 
-Scene *scene = new SceneCubeMap();
+Scene *scene = new SceneRenderToTex();
 
 void init(){
 	scene->init();

@@ -102,6 +102,15 @@
     <ClCompile Include="VBOPlane.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SceneRefract.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneProjectTexture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRenderToTex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -192,6 +201,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="VBOPlane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRefract.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneProjectTexture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRenderToTex.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -296,6 +314,24 @@
       <Filter>着色器</Filter>
     </None>
     <None Include="cubemap.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="refract.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="refract.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="projecttexture.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="projecttexture.frag">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="rendertotex.vert">
+      <Filter>着色器</Filter>
+    </None>
+    <None Include="rendertotex.frag">
       <Filter>着色器</Filter>
     </None>
   </ItemGroup>

@@ -10,7 +10,6 @@ SceneADS::~SceneADS(void){
 	delete mProgram;
 	delete mTorus;
 	delete mTeapot;
-	delete mMesh;
 }
 
 void SceneADS::init(){
@@ -23,21 +22,19 @@ void SceneADS::init(){
 
 	mat4 transform = glm::translate(mat4(1.0f),vec3(0.0f,1.5f,0.25f));
 	mTeapot = new VBOTeapot(mProgram, 5, transform, "VertexPosition", "VertexNormal", "VertexTex");
-	mMesh = new VBOMesh(mProgram, "bs_ears.obj", "VertexPosition", "VertexNormal", "VertexTexCoord", "VertexTangent",
-		"VertexEle");
-	mCamera = glm::lookAt(vec3(0.0f,0.0f,5.0f), vec3(0.0f,0.0f,0.0f), vec3(0.0f,1.0f,0.0f));
+	mCamera = glm::lookAt(vec3(0.0f,3.0f,5.0f), vec3(0.0f,0.75f,0.0f), vec3(0.0f,1.0f,0.0f));
 	//mModelView = mCamera * mModelView;
 
-	mProgram->setUniform("Ka", vec3(0.9f, 0.5f, 0.3f));
+	mProgram->setUniform("Ka", vec3(0.1f, 0.1f, 0.1f));
 	mProgram->setUniform("Kd", vec3(0.9f, 0.5f, 0.3f));
-	mProgram->setUniform("Ks", vec3(0.8f, 0.8f, 0.8f));
+	mProgram->setUniform("Ks", vec3(0.95f, 0.95f, 0.95f));
 
-	mProgram->setUniform("La", vec3(0.4f, 0.4f, 0.4f));
-	mProgram->setUniform("Ld", vec3(1.0f, 1.0f, 1.0f));
-	mProgram->setUniform("Ls", vec3(1.0f, 1.0f, 1.0f));
+	mProgram->setUniform("La", vec3(0.9f, 0.9f, 0.9f));
+	mProgram->setUniform("Ld", vec3(0.9f, 0.9f, 0.9f));
+	mProgram->setUniform("Ls", vec3(0.9f, 0.9f, 0.9f));
 	
-	mProgram->setUniform("Shininess", 100.0f);
-	mProgram->setUniform("LightPosition", mModelView * vec4(0, 0, 0, 1));
+	mProgram->setUniform("Shininess", 180.0f);
+	mProgram->setUniform("LightPosition", mCamera * mModelView * vec4(0, 0, 0, 1));
 }
 
 void SceneADS::reshape( int width, int height ){
@@ -48,22 +45,17 @@ void SceneADS::reshape( int width, int height ){
 void SceneADS::display(){
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	mModelView = mCamera * mModelView;
-	mModelView *= glm::rotate(-35.0f, vec3(1.0f,0.0f,0.0f));
-	mModelView *= glm::rotate(35.0f, vec3(0.0f,1.0f,0.0f));
-	mAngle += 0.05f;
-	if(mAngle > 360)
-		mAngle -= 360;
-	//mModelView *= glm::rotate(-mAngle, vec3(1.0f,0.0f,0.0f));
-	mModelView *= glm::rotate(mAngle, vec3(1.0f,1.0f,0.0f));
-
-	mProgram->setUniform("MV", mModelView);
-	mProgram->setUniform("NMat",
-		mat3( vec3(mModelView[0]), vec3(mModelView[1]), vec3(mModelView[2]) ));
-	mProgram->setUniform("MVP", mProjection * mModelView);
-	//mTeapot->render();
-	mMesh->render();
 	mModelView = mat4(1.0f);
+	mModelView = mCamera * mModelView;
+	mAngle += 0.01f;
+	mAngle = mAngle > 360 ? mAngle - 360 : mAngle;
+	float radians = TO_RADIANS(mAngle);
+	mProgram->setUniform("LightPosition", mModelView * vec4(10.0f * cos(radians), 3.0f, 10.0f * sin(radians), 1.0f));
+
+	mModelView *= glm::translate(vec3(0.0f,0.0f,0.0f));
+	mModelView *= glm::rotate(-90.0f, vec3(1.0f,0.0f,0.0f));
+	setUniformMatrix(mProgram, "MV", mModelView, "NM", "MVP", mProjection * mModelView);
+	mTeapot->render();
 
 	glutSwapBuffers();
 	glutPostRedisplay();

@@ -14,7 +14,7 @@ uniform vec3 Ks;
 
 uniform float Shininess;
 
-uniform mat3 NMat;
+uniform mat3 NM;
 uniform mat4 MV;
 uniform mat4 MVP;
 
@@ -23,7 +23,7 @@ out vec3 BackColor;
 out vec2 TexCoord;
 
 void getEyeSpace(out vec3 norm, out vec4 position){
-	norm = normalize(NMat * VertexNormal);
+	norm = normalize(NM * VertexNormal);
 	position = MV * vec4(VertexPosition, 1.0);
 }
 
